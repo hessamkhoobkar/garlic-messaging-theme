@@ -15,7 +15,7 @@
 	export let label: string | null = null;
 	export let href: string | null = null;
 	export let target: '_blank' | '_self' = '_self';
-	export let size: 'small' | 'medium' | 'large' = 'medium';
+	export let size: 'small' | 'medium' | 'large' | 'square' = 'medium';
 	export let variant: 'filled' | 'tonal' | 'outline' | 'text' = 'filled';
 	export let color: 'primary' | 'secondary' | 'success' | 'danger' | 'plain' = 'primary';
 	export let type: 'button' | 'submit' | 'reset' = 'button';
@@ -28,12 +28,14 @@
 	// Size Classes & icon sizes
 	$: btnSize =
 		size === 'small'
-			? 'text-xs h-10'
+			? 'text-xs h-10 py-2 px-4'
 			: size === 'large'
 			? 'text-baselg h-14 py-4 px-10'
+			: size === 'square'
+			? 'text-sm h-12 p-3'
 			: 'text-sm h-12 py-3 px-6';
 
-	$: iconSize = size === 'small' ? '16' : size === 'large' ? '24' : '24';
+	$: iconSize = size === 'small' ? '24' : size === 'large' ? '24' : size === 'square' ? '24' : '24';
 
 	// Variant & Color Classes
 	let variantStyle: string;
@@ -49,7 +51,7 @@
 
 		case variant === 'filled' && color === 'plain':
 			variantStyle =
-				'bg-gray-850 border-gray-850 text-white hover:bg-sky-900 hover:bg-opacity-20 hover:text-sky-500';
+				'bg-transparent border-transparent text-zinc-500 hover:bg-green-900 hover:bg-opacity-20 hover:text-green-500';
 			break;
 
 		case variant === 'outline' && color === 'plain':
