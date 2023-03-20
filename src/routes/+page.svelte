@@ -1,14 +1,12 @@
 <script lang="ts">
-	let activeChat: boolean = false;
+	import { activeChat } from '@utils/store';
 </script>
 
-{#if activeChat}
-	<!-- content here -->
+{#if $activeChat}
 	<div class="h-full w-full flex justify-center items-center">
 		<p>Chat selected</p>
 	</div>
 {:else}
-	<!-- else content here -->
 	<div class="h-full w-full flex justify-center items-center">
 		<p>No chat selected, please select on</p>
 	</div>

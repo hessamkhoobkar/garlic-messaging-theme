@@ -1,5 +1,10 @@
 <script lang="ts">
 	import { chats } from '@data/allChats';
+	import { activeChat } from '@utils/store';
+
+	function handleChatSelect() {
+		activeChat.set(true);
+	}
 </script>
 
 <div
@@ -8,6 +13,7 @@
 	{#each chats as chat}
 		<button
 			class="w-full flex justify-start items-center gap-3 p-2 hover:bg-zinc-800 rounded-2xl transition-all duration-200 ease-in-out"
+			on:click={handleChatSelect}
 		>
 			<img src={chat.avatar} alt="avatar of {chat.name}" class="w-10 h-10 rounded-full" />
 			<div class="grow flex flex-col justify-start items-start overflow-hidden">
