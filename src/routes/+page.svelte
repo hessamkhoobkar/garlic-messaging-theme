@@ -21,7 +21,11 @@
 					name={selectedUser.name}
 					activityState={selectedUser.activityState}
 				/>
-				<ChatPanel />
+				<ChatPanel
+					avatar={selectedUser.avatar}
+					name={selectedUser.name}
+					chatData={selectedUser.chatHistory}
+				/>
 				<ChatInput />
 			</div>
 		</div>
