@@ -23,7 +23,7 @@
 	// Styling & Classes
 	// Base style for all buttons
 	let baseStyle =
-		'inline-flex justify-center items-center rounded-xl border font-medium focus:outline-none focus:ring-2 focus:ring-sky-900 transition-all ease-in-out duration-200 group';
+		'inline-flex justify-center items-center rounded-xl border font-medium focus:outline-none focus:ring-2 focus:ring-green-900 transition-all ease-in-out duration-200 group';
 
 	// Size Classes & icon sizes
 	$: btnSize =
