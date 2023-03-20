@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { chats } from '@data/allChats';
+	import { chats } from '@data/chatPreviews.mock';
 	import { activeChat } from '@utils/store';
 
 	function handleChatSelect() {
