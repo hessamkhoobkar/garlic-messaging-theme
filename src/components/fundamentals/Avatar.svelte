@@ -1,8 +1,8 @@
 <script lang="ts">
 	let klass: string | '' = '';
 	export { klass as class };
-	export let src: string | null = null;
-	export let alt: string | null = null;
+	export let src: string;
+	export let alt: string;
 	export let size: '36' | '42' | '44' | '126' = '42';
 </script>
 
