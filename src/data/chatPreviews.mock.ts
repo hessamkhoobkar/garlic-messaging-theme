@@ -13,6 +13,7 @@ import avatar11 from '@/assets/imgs/users/avatar-11.png';
 import avatar12 from '@/assets/imgs/users/avatar-12.png';
 
 export interface Chat {
+	id: number;
 	name: string;
 	avatar: string;
 	lastMessage: string;
@@ -21,12 +22,14 @@ export interface Chat {
 
 export const chats: Chat[] = [
 	{
+		id: 30,
 		name: 'Emma Williams',
 		avatar: avatar0,
 		lastMessage: "Sorry, I'm busy tomorrow. How about next week?",
 		lastMessageTime: '15 min ago'
 	},
 	{
+		id: 1,
 		name: 'Brooklyn Simmons',
 		avatar: avatar1,
 		lastMessage:
@@ -34,18 +37,21 @@ export const chats: Chat[] = [
 		lastMessageTime: '1 hour ago'
 	},
 	{
+		id: 2,
 		name: 'Eleanor Pena',
 		avatar: eleanorAvatar,
 		lastMessage: "Sorry, I'm busy tomorrow. How about next week?",
 		lastMessageTime: '31 Mar'
 	},
 	{
+		id: 3,
 		name: 'Morning lovelies',
 		avatar: avatar3,
 		lastMessage: 'I am doing well, how about you?',
 		lastMessageTime: '29 Mar'
 	},
 	{
+		id: 4,
 		name: 'Rachel Carter',
 		avatar: avatar4,
 		lastMessage:
@@ -53,6 +59,7 @@ export const chats: Chat[] = [
 		lastMessageTime: 'Mar 29'
 	},
 	{
+		id: 5,
 		name: 'Amelia Baker',
 		avatar: avatar5,
 		lastMessage:
@@ -60,12 +67,14 @@ export const chats: Chat[] = [
 		lastMessageTime: 'Mar 29'
 	},
 	{
+		id: 6,
 		name: 'Lucas Nguyen',
 		avatar: avatar6,
 		lastMessage: "Sorry, I'm busy tomorrow. How about next week?",
 		lastMessageTime: 'Mar 29'
 	},
 	{
+		id: 7,
 		name: 'Benjamin Parker',
 		avatar: avatar7,
 		lastMessage:
@@ -73,18 +82,21 @@ export const chats: Chat[] = [
 		lastMessageTime: 'Mar 15'
 	},
 	{
+		id: 8,
 		name: 'Gabriella Mitchell',
 		avatar: avatar8,
 		lastMessage: "Sorry, I'm busy tomorrow. How about next week?",
 		lastMessageTime: 'Mar 08'
 	},
 	{
+		id: 9,
 		name: 'William Jones',
 		avatar: avatar9,
 		lastMessage: 'I am doing well, how about you?',
 		lastMessageTime: 'Mar 01'
 	},
 	{
+		id: 10,
 		name: 'Emily Lee',
 		avatar: avatar10,
 		lastMessage:
@@ -92,6 +104,7 @@ export const chats: Chat[] = [
 		lastMessageTime: 'Feb 22'
 	},
 	{
+		id: 11,
 		name: 'Henry Scott',
 		avatar: avatar11,
 		lastMessage:
@@ -99,6 +112,7 @@ export const chats: Chat[] = [
 		lastMessageTime: 'Jan 05'
 	},
 	{
+		id: 12,
 		name: 'Lily Wong',
 		avatar: avatar12,
 		lastMessage: "I'm sorry I'm running late, I'll be there soon.",

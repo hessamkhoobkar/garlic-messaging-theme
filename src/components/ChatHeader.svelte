@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { selectedUserDetails } from '@utils/store';
+
 	import Avatar from '@components/fundamentals/Avatar.svelte';
 	import Button from '@components/fundamentals/Button/Button.svelte';
 
@@ -10,11 +12,20 @@
 	export let avatar: any;
 	export let name: string;
 	export let activityState: string;
+
+	function userView() {
+		$selectedUserDetails === true ? selectedUserDetails.set(false) : selectedUserDetails.set(true);
+	}
 </script>
 
-<div class="w-full flex justify-start items-center bg-zinc-850 rounded-2xl p-2 pl-4">
+<div class="w-full flex justify-start items-center bg-zinc-850 rounded-2xl p-2 pl-3">
 	<div class="flex justify-start items-center">
-		<Avatar src={avatar} alt="Avatar of the {name}" />
+		<button
+			class="rounded-full border-4 border-transparent hover:border-4 hover:border-zinc-600 transition-all duration-200 ease-in-out"
+			on:click={userView}
+		>
+			<Avatar src={avatar} alt="Avatar of the {name}" />
+		</button>
 		<div class="flex flex-col justify-start items-start ml-4">
 			<span>{name}</span>
 			<span class="text-sm text-zinc-500">{activityState}</span>
