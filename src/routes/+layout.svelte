@@ -18,4 +18,30 @@
 		font-weight: theme(fontWeight.medium);
 		background-color: theme(colors.zinc.900);
 	}
+
+	:global(:root) {
+		--scrollbarBG: transparent;
+		--scrollbar: theme(colors.zinc.800);
+	}
+
+	:global(*) {
+		scrollbar-width: thin;
+		scrollbar-color: var(--scrollbarBG) var(--scrollbar);
+	}
+
+	:global(*::-webkit-scrollbar) {
+		width: 8px;
+	}
+
+	:global(*::-webkit-scrollbar-track) {
+		background: var(--scrollbarBG);
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	:global(*::-webkit-scrollbar-thumb) {
+		background-color: var(--scrollbar);
+		border-radius: 20px;
+		border: 2px solid var(--scrollbarBG);
+	}
 </style>

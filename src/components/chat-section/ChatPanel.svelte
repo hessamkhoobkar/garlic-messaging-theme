@@ -40,29 +40,8 @@
 </div>
 
 <style lang="postcss">
-	:root {
-		--scrollbarBG: transparent;
-		--scrollbar: theme(colors.zinc.800);
-	}
-
-	* {
-		scrollbar-width: thin;
-		scrollbar-color: var(--scrollbarBG) var(--scrollbar);
-	}
-
-	*::-webkit-scrollbar {
-		width: 8px;
-	}
-
 	*::-webkit-scrollbar-track {
-		background: var(--scrollbarBG);
 		margin-top: 0.5rem;
 		margin-bottom: 0.5rem;
-	}
-
-	*::-webkit-scrollbar-thumb {
-		background-color: var(--scrollbar);
-		border-radius: 20px;
-		border: 2px solid var(--scrollbarBG);
 	}
 </style>
