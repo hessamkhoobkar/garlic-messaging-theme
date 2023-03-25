@@ -35,98 +35,86 @@ export const aviableUsers: Chat[] = [
 		lastMessageTime: '31 Mar',
 		activityState: 'Last seen at 16:41',
 		chatHistory: [
-			{ sender: true, text: "Hey, what's up?", date: '2022-01-05 8:32 AM' },
+			{ sender: true, text: "Hey, how's it going?", date: '2023-03-15 10:22 AM' },
 			{
 				sender: false,
-				text: 'Not much, just getting ready for work. How about you?',
-				date: '2022-01-05 9:05 AM'
+				text: 'Not much, just finished up some errands. How about you?',
+				date: '2023-03-15 10:55 AM'
 			},
 			{
 				sender: true,
-				text: "Sorry for the late reply. I've been busy with work too. Do you want to grab dinner sometime next week?",
-				date: '2022-01-08 6:14 PM'
+				text: "I've been pretty busy with work. Do you want to grab lunch sometime next week?",
+				date: '2023-03-17 2:14 PM'
 			},
 			{
 				sender: false,
-				text: 'Sounds good. How about Wednesday evening?',
-				date: '2022-01-09 11:20 AM'
+				text: 'Sure, how about Tuesday at noon?',
+				date: '2023-03-18 9:35 AM'
 			},
 			{
 				sender: true,
-				text: "Wednesday works for me. Let's meet at that new Italian place downtown at 7 pm?",
-				date: '2022-01-10 2:45 PM'
+				text: "Tuesday works for me. Let's meet at that new sushi place downtown.",
+				date: '2023-03-19 3:20 PM'
 			},
 			{
 				sender: false,
-				text: 'Sorry, I have to cancel dinner tonight. Something came up at work.',
-				date: '2022-01-12 8:10 AM'
-			},
-			{
-				sender: true,
-				text: "No worries. Let's reschedule for next week?",
-				date: '2022-01-15 1:32 PM'
-			},
-			{ sender: false, text: 'Sure, how about Thursday evening?', date: '2022-01-16 5:45 PM' },
-			{
-				sender: true,
-				text: "Sounds good. Let's meet at 6:30 pm at the same place.",
-				date: '2022-01-17 9:28 AM'
-			},
-			{
-				sender: false,
-				text: 'Hey, are you free this weekend? I want to try that new coffee shop in the city.',
-				date: '2022-01-21 10:15 PM'
+				text: 'Hey, are you free this weekend? I want to check out that new art exhibit.',
+				date: '2023-03-21 7:15 PM'
 			},
 			{
 				sender: true,
 				text: 'Sorry, I have plans this weekend. How about next weekend?',
-				date: '2022-01-22 12:20 PM'
+				date: '2023-03-22 11:20 AM'
 			},
 			{
 				sender: false,
-				text: "Sure, let's plan for next Saturday at 11 am.",
-				date: '2022-01-23 8:05 AM'
+				text: "Sure, let's plan for Saturday afternoon.",
+				date: '2023-03-23 8:05 AM'
 			},
 			{
 				sender: true,
-				text: 'Hey, I just got back from vacation. How have you been?',
-				date: '2022-02-02 2:15 PM'
+				text: 'Hey, did you hear about that new movie that just came out? Do you want to check it out this Friday night?',
+				date: '2023-03-25 1:45 PM'
 			},
 			{
 				sender: false,
-				text: "Welcome back! I've been good, just busy with work.",
-				date: '2022-02-03 9:45 AM'
+				text: 'Sounds good. Let me know what time and where to meet.',
+				date: '2023-03-25 4:20 PM'
 			},
 			{
 				sender: true,
-				text: "Sorry for not replying earlier, I've been swamped with work. How about we catch up over lunch tomorrow?",
-				date: '2022-02-10 7:50 PM'
+				text: "Let's meet at the theater near your place at 7 pm.",
+				date: '2023-03-26 9:28 AM'
 			},
 			{
 				sender: false,
-				text: 'I have a meeting at noon, but I can meet you at 11 am. How about that?',
-				date: '2022-02-11 10:30 AM'
+				text: 'Great, see you there!',
+				date: '2023-03-26 11:45 AM'
 			},
 			{
 				sender: true,
-				text: "That works for me. Let's meet at the sandwich place near your office.",
-				date: '2022-02-11 1:45 PM'
-			},
-			{ sender: false, text: 'Hey, how was your day?', date: '2022-02-17 6:25 PM' },
-			{
-				sender: true,
-				text: 'It was busy, but good. How about you?',
-				date: '2022-02-17 7:10 PM'
+				text: 'Hey, how was the movie last night?',
+				date: '2023-03-27 12:15 PM'
 			},
 			{
 				sender: false,
-				text: "Sorry for not replying earlier. I've been sick the past few days. How about we catch up next week?",
-				date: '2022-02-20 11:30 AM'
+				text: 'It was really good. Thanks for inviting me!',
+				date: '2023-03-28 10:45 AM'
 			},
 			{
 				sender: true,
-				text: "No worries, feel better soon. Let's plan for next Thursday evening?",
-				date: '2022-02-21 8:15 AM'
+				text: 'No problem, we should do it again sometime.',
+				date: '2023-03-29 3:50 PM'
+			},
+			{
+				sender: false,
+				text: 'Definitely. How about we plan a hiking trip next month?',
+				date: '2023-04-02 7:30 PM'
+			},
+			{
+				sender: true,
+				text: "That sounds like a great idea. Let's talk more about it next time we meet up.",
+				date: '2023-04-03 11:10 AM'
 			}
 		]
 	},
