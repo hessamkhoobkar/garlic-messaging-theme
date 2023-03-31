@@ -17,12 +17,12 @@
 <div bind:this={chatContainer} class="w-full grow overflow-y-auto text-zinc-800">
 	<div class="flex flex-col justify-start items-start gap-2 py-4">
 		{#each chatData as chatItem}
-			<div class="flex justify-start items-end w-full gap-2 px-4">
+			<div class="flex justify-start items-end w-full gap-2 lg:px-4">
 				{#if chatItem.sender}
 					<Avatar src={avatar} alt="Avatar of the {name}" />
 				{/if}
 				<div
-					class="rounded-2xl p-4 text-white max-w-lg relative pb-6
+					class="rounded-2xl p-4 text-white max-w-[calc(100%_-_48px_-_2px)] lg:max-w-lg relative pb-6
 				{chatItem.sender ? 'bg-green-900' : 'bg-zinc-850 ml-auto'}"
 				>
 					<p class="leading-normal">{chatItem.text}</p>

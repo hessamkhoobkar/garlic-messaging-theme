@@ -7,7 +7,9 @@
 	import media5 from '@/assets/imgs/media/media-5.jpg';
 </script>
 
-<div class="w-80 bg-zinc-850 rounded-2xl p-4 gap-4 flex flex-col justify-between items-start">
+<div
+	class="w-full lg:w-80 bg-zinc-850 rounded-2xl p-4 gap-4 flex flex-col justify-between items-start"
+>
 	<div class="flex justify-start items-center mb-2 w-full">
 		<h2 class="text-lg font-medium tracking-[-0.02em]">Media, links, and docs</h2>
 		<div

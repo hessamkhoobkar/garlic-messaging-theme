@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
+	import { fly, fade } from 'svelte/transition';
 	import { expoInOut } from 'svelte/easing';
 
 	import ChatHeader from '@components/chat-section/ChatHeader.svelte';
@@ -24,7 +24,7 @@
 
 <div
 	class="h-full grow flex justify-start items-start"
-	transition:fly={{ duration: 1000, easing: expoInOut, x: 150 }}
+	in:fly={{ duration: 1000, easing: expoInOut, x: 150 }}
 >
 	<div class="h-full w-full flex flex-col justify-start items-start">
 		<ChatHeader

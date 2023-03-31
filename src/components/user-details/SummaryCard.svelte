@@ -18,7 +18,9 @@
 	export let selectedUser: User;
 </script>
 
-<div class="w-80 bg-zinc-850 rounded-2xl p-4 gap-6 flex flex-col justify-center items-center">
+<div
+	class="w-full lg:w-80 bg-zinc-850 rounded-2xl p-4 gap-6 flex flex-col justify-center items-center"
+>
 	<img src={selectedUser.avatarLg} alt="ss" class="w-32 h-32 rounded-full" />
 	<div class="flex flex-col justify-center items-center w-full gap-1">
 		<h3 class="text-lg font-medium tracking-[-0.02em]">{selectedUser.name}</h3>

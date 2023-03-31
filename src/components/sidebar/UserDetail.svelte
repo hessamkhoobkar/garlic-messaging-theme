@@ -78,12 +78,12 @@
 	/>
 
 	<div
-		class="fixed w-81 h-full flex flex-col justify-start items-start gap-2 z-50 inset-y-0 left-0 p-2 max-h-screen overflow-x-hidden overflow-y-auto"
+		class="fixed w-full top-0 lg:w-81 lg:h-full flex flex-col justify-start items-start gap-2 z-50 lg:inset-y-0 left-0 p-2 lg:max-h-screen overflow-x-hidden overflow-y-auto"
 		transition:fly={{ duration: 1000, easing: expoInOut, x: -150 }}
 	>
-		<div class="w-80 bg-zinc-850 rounded-2xl flex flex-col justify-center items-center">
+		<div class="w-full lg:w-80 bg-zinc-850 rounded-2xl flex flex-col justify-center items-center">
 			<button
-				class="w-80 bg-zinc-850 rounded-2xl p-4 gap-4 flex justify-start items-center hover:bg-red-900 hover:bg-opacity-20 hover:text-red-500 transition-all duration-200 ease-in-out "
+				class="w-full lg:w-80 bg-zinc-850 rounded-2xl p-4 gap-4 flex justify-start items-center hover:bg-red-900 hover:bg-opacity-20 hover:text-red-500 transition-all duration-200 ease-in-out "
 				on:click={handleBackground}
 			>
 				<span>
@@ -93,9 +93,9 @@
 			</button>
 		</div>
 
-		<div class="w-80 bg-zinc-850 rounded-2xl relative overflow-hidden">
-			<div class="z-[1] absolute top-0 left-0 h-20 overflow-hidden">
-				<img class="" src={user.cover} alt="cover" />
+		<div class="w-full lg:w-80 bg-zinc-850 rounded-2xl relative overflow-hidden">
+			<div class="z-[1] w-full absolute top-0 left-0 h-20 overflow-hidden">
+				<img class="w-full" src={user.cover} alt="cover" />
 			</div>
 			<div class="z-[2] relative flex flex-col justify-center items-center py-8">
 				<Avatar src={user.avatar} alt="user's avatar" size="80" />
@@ -104,7 +104,9 @@
 			</div>
 		</div>
 
-		<div class="w-80 bg-zinc-850 rounded-2xl p-2 flex flex-col justify-between items-start">
+		<div
+			class="w-full lg:w-80 bg-zinc-850 rounded-2xl p-2 flex flex-col justify-between items-start"
+		>
 			{#each links as link}
 				<span
 					class="p-4 py-3 cursor-pointer w-full rounded-2xl hover:bg-green-900 hover:bg-opacity-20 hover:text-green-500 transition-all duration-200 ease-in-out flex justify-start items-center gap-4 group"
@@ -120,7 +122,9 @@
 			{/each}
 		</div>
 
-		<div class="w-80 bg-zinc-850 rounded-2xl p-2 flex flex-col justify-between items-start">
+		<div
+			class="w-full lg:w-80 bg-zinc-850 rounded-2xl p-2 flex flex-col justify-between items-start"
+		>
 			<span
 				class="p-4 py-3 cursor-pointer w-full rounded-2xl hover:bg-green-900 hover:bg-opacity-20 hover:text-green-500 transition-all duration-200 ease-in-out flex justify-start items-center gap-4"
 			>

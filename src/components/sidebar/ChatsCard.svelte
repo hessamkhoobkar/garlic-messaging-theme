@@ -8,7 +8,7 @@
 </script>
 
 <div
-	class="w-80 grow bg-zinc-850 rounded-2xl p-1 flex flex-col justify-start items-start overflow-x-hidden overflow-y-auto"
+	class="w-full lg:w-80 grow bg-zinc-850 rounded-2xl p-1 flex flex-col justify-start items-start overflow-x-hidden overflow-y-auto"
 >
 	{#each chats as chat, index}
 		<button
